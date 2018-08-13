@@ -38,7 +38,7 @@ def processData(filepath,htmlFile):
     urlslist=list(urlsFile)
     #访问验证
     for url in urlslist:
-        url=url.strip()
+        url=url.strip()  #去掉字符串末尾的\n
         print(url)
         status=access(url)
         if(status!=404):
